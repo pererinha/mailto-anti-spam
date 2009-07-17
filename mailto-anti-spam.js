@@ -7,10 +7,18 @@
  * 2009-07-06
  */
 var config = {
+
 	at : '@',
+
 	domain : 'gmail',
-	comercial : 'com'
+
+	comercial : 'com',
+	dot : '.'
+
 }
+
 function MailtoAntiSpam(destiny){
-	document.write(unescape('%3Cstrong%3E%3Ca%20href%3D%22mailto:' + destiny + config.at + config.domain + config.comercial + '%22%3E' + destiny + config.at + config.domain + config.comercial + '%3C/a%3E%3C/strong%3E'));
+
+	document.write(unescape('%3Cstrong%3E%3Ca%20href%3D%22mailto:' + destiny + config.at + config.domain + config.dot + config.comercial + '%22%3E' + destiny + config.at + config.domain + config.dot + config.comercial + '%3C/a%3E%3C/strong%3E'));
+
 }
